@@ -1,0 +1,16 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+#currentTime, #timerCountdown, #timeZoneTime {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#timetableList {
+    margin-top: 20px;
+}

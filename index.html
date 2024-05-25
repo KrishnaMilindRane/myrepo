@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Time Management Website</h1>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3>Current Time</h3>
+                <div id="currentTime"></div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="24hourToggle">
+                    <label class="form-check-label" for="24hourToggle">
+                        24-Hour Clock
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Set Timer</h3>
+                <input type="time" id="timerInput" class="form-control">
+                <button id="setTimerBtn" class="btn btn-outline-primary mt-2">Set Timer</button>
+                <div id="timerCountdown"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3>Time Zone</h3>
+                <select id="timezoneSelect" class="form-control">
+                    <option value="UTC">UTC</option>
+                    <option value="America/New_York">New York (UTC-5)</option>
+                    <option value="Europe/London">London (UTC+0)</option>
+                    <option value="Asia/Tokyo">Tokyo (UTC+9)</option>
+                </select>
+                <div id="timeZoneTime"></div>
+            </div>
+            <div class="col-md-6">
+                <h3>Schedule Timetable</h3>
+                <form id="timetableForm">
+                    <div class="form-group">
+                        <label for="taskName">Task Name</label>
+                        <input type="text" id="taskName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="taskTime">Task Time</label>
+                        <input type="time" id="taskTime" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-outline-success">Add Task</button>
+                </form>
+                <ul id="timetableList" class="list-group mt-3"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
